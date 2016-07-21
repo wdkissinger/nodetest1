@@ -24,6 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.listen(8888, function () {
+  console.log('Example app listening on port 8888!');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
